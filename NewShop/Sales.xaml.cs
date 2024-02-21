@@ -28,6 +28,7 @@ namespace NewShop
             InitializeComponent();
         }
 
+        AddStuff ads = new AddStuff();
         DAO dao = new DAO();
         SqlDataReader dr;
 
@@ -50,6 +51,12 @@ namespace NewShop
             int qty = int.Parse(txtQty.Text);
             decimal tot = pri * qty;
             DateTime dt = DateTime.Now;
+
+            ads.NewSale(cusName, pro, pri, qty, tot, dt);
+            txtFullName.Clear();
+            txtProductName.Clear();
+            txtPrice.Clear();
+            txtQty.Clear();
         }
 
         void PopComboCus()

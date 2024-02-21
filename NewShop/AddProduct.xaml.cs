@@ -31,7 +31,11 @@ namespace NewShop
 
         private void btnAddpro_Click(object sender, RoutedEventArgs e)
         {
-            string pname = cboProdName.SelectedItem.ToString();
+            //string pname = cboProdName.SelectedItem.ToString();
+
+            var item = (ComboBoxItem)cboProdName.SelectedValue;
+            var pname = (string)item.Content;
+
             int qty = int.Parse(txtQty.Text);
             decimal pri = decimal.Parse(txtPrice.Text);
 
