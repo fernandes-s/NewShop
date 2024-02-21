@@ -1,0 +1,14 @@
+﻿<Window x:Class="NewShop.ShowAll"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewShop"
+        mc:Ignorable="d"
+        Title="ShowAll" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnShowCus" Content="Show Customers" HorizontalAlignment="Left" Margin="48,44,0,0" VerticalAlignment="Top" Height="44" Width="176" FontSize="22" Click="btnShowCus_Click"/>
+        <DataGrid x:Name="dgv" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,151,0,62"/>
+
+    </Grid>
+</Window>

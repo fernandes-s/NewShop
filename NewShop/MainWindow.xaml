@@ -1,0 +1,25 @@
+﻿<Window x:Class="NewShop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewShop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnAddCus" Content="Add Customer" HorizontalAlignment="Left" Margin="106,83,0,0" VerticalAlignment="Top" Height="43" Width="207" FontSize="22" Click="btnAddCus_Click"/>
+        <Button x:Name="btnShow" Content="Show" HorizontalAlignment="Left" Margin="359,81,0,0" VerticalAlignment="Top" FontSize="22" Height="47" Width="208" Click="btnShow_Click"/>
+        <Button x:Name="btnAddProduct" Content="Add Product" HorizontalAlignment="Left" Margin="106,159,0,0" VerticalAlignment="Top" Height="41" Width="207" FontSize="22" Click="btnAddProduct_Click"/>
+        <Button x:Name="btnSales" Content="Sales" HorizontalAlignment="Left" Margin="108,228,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="60" Width="201" FontSize="22" Click="btnSales_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.636"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>
