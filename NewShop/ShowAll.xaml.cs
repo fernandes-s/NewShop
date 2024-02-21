@@ -24,11 +24,18 @@ namespace NewShop
         {
             InitializeComponent();
         }
+        Queries q = new Queries();
 
         private void btnShowCus_Click(object sender, RoutedEventArgs e)
         {
             Queries q = new Queries();
             dgv.ItemsSource = q.AllCus().DefaultView;
+        }
+
+        private void btnSpend_Click(object sender, RoutedEventArgs e)
+        {
+            decimal spend = decimal.Parse(txtSpend.Text);   
+            dgv.ItemsSource = q.MySpend(spend).DefaultView;
         }
     }
 }

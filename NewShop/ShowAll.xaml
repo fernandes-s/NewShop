@@ -9,6 +9,8 @@
     <Grid>
         <Button x:Name="btnShowCus" Content="Show Customers" HorizontalAlignment="Left" Margin="48,44,0,0" VerticalAlignment="Top" Height="44" Width="176" FontSize="22" Click="btnShowCus_Click"/>
         <DataGrid x:Name="dgv" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,151,0,62"/>
+        <Button x:Name="btnSpend" Content="Spend" HorizontalAlignment="Left" Margin="260,44,0,0" VerticalAlignment="Top" Height="44" Width="176" FontSize="22" Click="btnSpend_Click"/>
+        <TextBox x:Name="txtSpend" HorizontalAlignment="Left" Margin="260,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="176"/>
 
     </Grid>
 </Window>

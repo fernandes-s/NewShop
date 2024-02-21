@@ -29,6 +29,26 @@ namespace DAL
 
         }
 
+        public DataTable MySpend(decimal sp) 
+        {
+            SqlCommand cmd = OpenCon().CreateCommand();
+            cmd.CommandText = "uspSpend";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@sp", sp);
+
+            da = new SqlDataAdapter();
+            dt = new DataTable();
+
+            da.SelectCommand = cmd;
+            da.Fill(dt);
+
+            CloseCon();
+            return dt;
+
+
+        }
+
 
 
     }
